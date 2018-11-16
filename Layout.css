@@ -1,0 +1,853 @@
+
+/*
+   PHP Project
+       File Name: Layout.css
+       Authors: Nick Ross, Hari Chandana Paruchuri, Arnesh Koul
+*/
+
+html { 
+  margin: 0;
+  padding: 0;
+  min-width: 845px;
+}
+
+body {
+    background-image: url(QuipItGraphicLong2.jpg);
+    background-size: 100%;
+    background-position: center;  
+    margin: 0;
+    padding: 0;
+    min-width: 845px;
+}
+
+/******************************************************************/
+/*                           HEADER                               */
+/******************************************************************/
+
+header {
+   width: 100%;
+   float: none;
+   background-color: royalblue;
+   position: fixed;
+   height: 60px;
+   top:0;
+   left:0;
+   right: 0;
+   z-index: 10;
+   min-width: 845px;
+}
+
+header input {
+    float: right;
+    margin-top: 16px;
+    margin-right: 4.5%;
+    width: 25%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+}
+
+header div.sign  {
+    float: right;
+    margin-top: 20px;  
+    margin-right: 6%;
+}
+
+header div.sign a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header div.reg  {
+    float: right;
+    margin-top: 20px;  
+    margin-right: 4%;
+}
+
+header div.reg a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header div.linkback {
+    float: left;
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+header div.linkback img {
+    height: 44px;
+    width: 102px;
+}
+
+/******************************************************************/
+/*                       SIGN IN PAGE ASIDE                       */
+/******************************************************************/
+
+div.SignIn aside {   
+    margin-left: 30%; 
+    margin-top: 150px;
+    margin-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    border-radius: 1%;
+    background-color: rgba(65, 105, 225, .85);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+
+}
+
+body.SignIn div.signimg img.Welcome {
+    width: 80%;   
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+
+div.SignIn aside h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    margin-bottom: 15px;
+    margin-left: 1%;
+
+}
+
+div.SignIn aside input {
+    margin-left: 1%;
+    width: 98%;
+    padding: 1%;
+    background-color: rgba(65, 105, 225, .2);
+    border: solid 1px white;
+    color: white;
+    font-size: .9em;
+    margin: 8px 1%;
+    display: inline-block;
+    box-sizing: border-box; 
+}
+
+div.SignIn aside label{
+     margin-left: 1%;
+}
+
+div.SignIn aside input:last-of-type {
+    margin-bottom: 2%;
+}
+
+div.SignIn button.signbutton {
+    color: white;
+    background-color: rgba(65, 105, 225, 0);
+    border: none;
+    font-size: 1em;
+    margin-bottom: 7%; 
+    margin-top: 7%;
+    width: 98%;
+    margin-left: 1%;
+}
+
+div.SignIn div.signlink {
+    width: 98%;
+    text-align: center;
+}
+
+div.SignIn div.signlink a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+div.SignIn div.val_error {
+    margin-left: 1%;
+}
+
+/******************************************************************/
+/*                      REGISTER PAGE ASIDE                       */
+/******************************************************************/
+
+div.Register aside {
+    margin-left: 30%; 
+    margin-top: 130px;
+    margin-bottom: 9%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    border-radius: 1%;
+    background-color: rgba(65, 105, 225, .85);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+}
+
+body.Register div.regimg img.Welcome {
+     width: 80%;   
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+
+div.Register aside h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+    padding-left: 1%;
+    padding-right: 2px;
+}
+
+div.Register aside input {
+    margin-left: 1%;
+    width: 98%;
+    padding: 1%;
+    background-color:  rgba(65, 105, 225, .2);
+    border: solid 1px white;
+    color: white;
+    font-size: .9em;
+    margin: 8px 1%;
+    display: inline-block;
+    box-sizing: border-box; 
+}
+
+div.Register aside input:last-of-type {
+    margin-bottom: 2%;
+}
+
+div.Register aside label{
+     margin-left: 1%;
+}
+
+div.Register aside button.Register {
+    color: white;
+    background-color: rgba(65, 105, 225, 0);
+    border: none;
+    font-size: 1em;
+    margin-bottom: 7%; 
+    margin-top: 7%;
+    width: 98%;
+    margin-left: 1%;
+}
+
+div.reglink {
+  width: 98%;
+  text-align: center;
+}
+
+div.reglink a {
+    color: white;
+    text-decoration: none;
+}
+
+div.Register div.val_error {
+    margin-left: 1%;
+}
+
+/******************************************************************/
+/*                          NAVIGATION                            */
+/******************************************************************/
+
+nav {
+    float: left; 
+    display: table;
+    width: 88%;
+    margin-left: 6%; 
+    margin-top: 46px;
+}
+
+nav ul {
+    display: table-row;
+}
+
+nav ul li {
+    display: table-cell;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;       
+    width: 15%;
+    text-align: center;
+    border: thin solid white;
+}
+
+nav ul li button.nav {
+    display: block;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0;    
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/******************************************************************/
+/*                       WELCOME PAGE ASIDE                       */
+/******************************************************************/
+
+div#welcome aside {
+    display: block;
+    float: left;  
+    margin-top: 108px;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 88%;
+    background-color: royalblue;
+    border-radius: 1%;
+    color: white;
+    font-family: "Arial, Helvetica", sans-serif;
+}
+
+div#welcome aside h1 {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    padding-left: 1%;
+    font-size: 2em;
+    padding-top: 2%;
+}
+
+div#welcome aside div {
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-bottom: 2%;
+   font-size: 1em;
+   padding-left: 1%;
+}
+
+/******************************************************************/
+/*                       HOME PAGE CONTENT                        */
+/******************************************************************/
+
+div#HomeContent dl {
+    float: left;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 5%;
+    background-color: white;
+    padding-top: 1.25%;
+    padding-left: 1.25%;
+    padding-right: 1.65%;
+    padding-bottom: 1.25%;
+    width: 85%;
+    font-family: "Arial, Helvetica", sans-serif;
+    text-align: left;
+    box-shadow: rgba(65, 105, 225, .8) 0px 0px 30px 0px;
+    border: 1px solid rgba(168, 168, 168, 1.00);
+    min-height: 506px
+}
+
+div#HomeContent dt {
+    display: block;
+    font-weight: bold;
+    color: royalblue;
+    font-size: 1.65em;
+    font-family:"Arial, Helvetica", sans-serif;
+    margin: 0 0 1% .5%;
+}
+
+div#HomeContent dd {
+    display: block;
+    margin: 0 0 1% .5%;
+    font-family: "Arial, Helvetica", sans-serif;
+}
+
+div#HomeContent dd:nth-of-type(3n) {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(168, 168, 168, 1.00);
+    display: block;
+    font-size: .8em;
+    font-family: "Arial, Helvetica", sans-serif;
+}
+
+div#HomeContent dl input {
+    float: right;
+    background-color: royalblue;
+    color: white;
+    border-color: white;
+    font-family:"Arial, Helvetica", sans-serif;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 1%;
+}
+
+/******************************************************************/
+/*                      SEARCH PAGE CONTENT                       */
+/******************************************************************/
+
+div#SearchContent dl {
+    float: left;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 5%;
+    background-color: white;
+    padding-top: 1.25%;
+    padding-left: 1.25%;
+    padding-right: 1.65%;
+    padding-bottom: 1.25%;
+    width: 85%;
+    font-family: "Arial, Helvetica", sans-serif;
+    text-align: left;
+    box-shadow: rgba(65, 105, 225, .8) 0px 0px 30px 0px;
+    border: 1px solid rgba(168, 168, 168, 1.00);
+    min-height: 506px
+}
+
+div#SearchContent dt {
+    display: block;
+    font-weight: bold;
+    color: royalblue;
+    font-size: 1.65em;
+    font-family:"Arial, Helvetica", sans-serif;
+    margin: 0 0 1% .5%;
+}
+
+div#SearchContent dd {
+    display: block;
+    margin: 0 0 1% .5%;
+    font-family: "Arial, Helvetica", sans-serif;
+}
+
+div#SearchContent dd:nth-of-type(2n) {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(168, 168, 168, 1.00);
+    display: block;
+    font-size: .85em;
+    font-family: "Arial, Helvetica", sans-serif;
+}
+
+div#SearchContent dd:first-of-type {
+    font-size: 1.5em;
+}
+
+div#SearchContent dd:last-of-type {
+    font-size: .85em;
+}
+
+div#SearchContent dl input {
+    float: right;
+    background-color: royalblue;
+    color: white;
+    border-color: white;
+    font-family:"Arial, Helvetica", sans-serif;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 1%;
+}
+
+/******************************************************************/
+/*                        VIEW PAGE CONTENT                       */
+/******************************************************************/
+
+div#ViewContent dl {
+    float: left;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 5%;
+    background-color: white;
+    padding-top: 1.25%;
+    padding-left: 1.25%;
+    padding-right: 1.65%;
+    padding-bottom: 1.25%;
+    width: 85%;
+    font-family: "Arial, Helvetica", sans-serif;
+    text-align: left;
+    box-shadow: rgba(65, 105, 225, .8) 0px 0px 30px 0px;
+    border: 1px solid rgba(168, 168, 168, 1.00);
+    min-height: 506px
+}
+
+div#ViewContent dt {
+    display: block;
+    font-weight: bold;
+    color: royalblue;
+    font-size: 1.65em;
+    font-family:"Arial, Helvetica", sans-serif;
+    margin: 0 0 1% .5%;
+}
+
+div#ViewContent dd:first-of-type {
+    display: block;
+    margin: 0% 0 1% 1%;
+    font-family: "Arial, Helvetica", sans-serif;
+    font-size: 1.25em;
+}
+
+div#ViewContent dl input {
+    float: right;
+    background-color: royalblue;
+    color: white;
+    border-color: white;
+    font-family:"Arial, Helvetica", sans-serif;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+div#ViewContent dd:nth-of-type(1n+2) {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(168, 168, 168, 1.00);
+    display: block;
+    font-size: 1em;
+    font-family: "Arial, Helvetica", sans-serif;
+    margin-top: 1%;
+}
+
+div#ViewContent textarea 
+{
+    margin-left: 5%;  
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border: 1px solid rgba(168, 168, 168, 1.00);
+    border-radius: 1%;
+    color: black;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.05em;
+    background-color: white;   
+    width: 94.65%;
+    height: 150px;
+    overflow: auto; 
+}
+
+div#ViewContent label {
+    margin-left: 5%;
+}
+
+div#ViewContent button {
+    margin-left: 5%;
+    width: 13%;
+    padding-top: .5%;
+    padding-bottom: .5%;   
+    margin-bottom: .5%;
+    border-radius: 1%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ div.comment div.val_error { 
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+/******************************************************************/
+/*                  QUIP CREATE PAGE CONTENT                      */
+/******************************************************************/
+
+div#CreateAside aside {
+    background-color: rgba(65, 105, 225, .85);
+    border-radius: 1%;
+    float: left;
+    padding-top: 1.25%;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    padding-bottom: 1.25%;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-bottom: 5.35%;
+    width: 85.5%;  
+}
+
+div#CreateAside div#QuipTitle {
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 96%;
+}
+
+div#CreateAside div#QuipTitle label {
+    color: white;
+    font-size: 170%;
+    margin-left: 1%;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+div#CreateAside div#QuipTitle input {
+/*    float: left;*/
+    margin-top: 2%;
+    margin-left: 1%; 
+    padding-bottom: 4px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px white;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.2em;
+    color: white; 
+}
+div#CreateAside div#QuipContent {
+  float: left;  
+  margin-left: 0%;
+  width: 96%;
+} 
+
+div#CreateAside div#QuipContent label {
+    color: white;
+    font-size: 170%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;   
+    margin-left: 1.75%;  
+    margin: 2%;
+}
+
+div#CreateAside aside div#QuipContent textarea {
+/*    float: left;*/
+    margin-left: 1.75%;  
+    margin-bottom: 1%;
+    border: solid 1px white;
+    border-radius: 1%;
+    color: white;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0);   
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+}
+
+div#CreateAside div#Category {
+    float: left;
+    margin-left: 1.5%;
+    margin-top: .8%;
+
+}
+
+div#CreateAside div#Category label {
+    color: white;
+    font-size: 170%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1.75%;
+}
+
+div#CreateAside div#Category select { 
+    margin-left: 2%;
+    margin-top: 4%;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: white;
+    border: solid 1px white;
+    font-size: 1.1em;
+    color: white;   
+    border-radius: 1%;
+    display: inline-block;
+}
+
+div#CreateAside div#Button button { 
+    float: left;
+    border: solid 2px white;
+    border-color: white;
+    background-color: royalblue;
+    font-size: 1em;
+    color: white;
+    margin-left: 1.75%;
+    margin-bottom: 1.75%;
+    padding-left: 4px;  
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 200px;
+    display: block;
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+div#CreateAside div.val_error {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+div#CreateAside div#QuipContent div.val_error {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+div#CreateAside div#Category div.val_error {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+/******************************************************************/
+/*                   CONSTANT ASIDE AFTER LOGIN                   */
+/******************************************************************/
+
+aside div#LoggedIn {
+    display: block;
+    float: left;  
+    margin-top: 108px;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 88%;
+    background-color: royalblue;
+    border-radius: 1%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside div#LoggedIn input.name {
+    margin-top: 1%;
+    margin-bottom: 0;
+    margin-left: 1.75%;
+    font-size: 2em;
+    color: white;
+    background-color: royalblue;
+    border: none;
+}
+
+aside div#LoggedIn nav {
+    float: left; 
+    display: table;
+    width: 98%;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+aside div#LoggedIn nav ul {
+    display: table-row;   
+}
+
+aside div#LoggedIn nav ul li {
+    display: table-cell;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;       
+    text-align: center; 
+    border: none;
+}
+
+aside div#LoggedIn nav ul li:nth-of-type(2) {
+    display: table-cell;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;       
+    text-align: center; 
+    border: none;
+    padding-left: 12px;
+}
+
+aside div#LoggedIn nav ul li:nth-of-type(3) {
+    display: table-cell;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;       
+    text-align: center; 
+    border: none;
+    padding-left: 12px;
+}
+
+aside div#LoggedIn nav ul input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .95em;       
+    border: none;
+    background-color: royalblue;
+    color: white;
+    
+}
+
+
+/*****************************************************************/
+/*                      REQUIRED MISC. CODE                      */
+/*****************************************************************/
+
+button {
+    background-color: royalblue;
+    color: white;
+    font-size: 1em;
+    font-family:  Arial, Helvetica, sans-serif;        
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/******************************************************************/
+/*                    SIGNED IN DROPDOWN                          */
+/******************************************************************/
+
+div input.dropbtn {
+    background-color: royalblue;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 21px;
+    padding-left: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0px; 
+    width: 99%;
+    padding-left: 12px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-right: 6%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;   
+    width: 100%;
+    box-shadow: 0px 0px 20px 0px rgba(65,105,225,0.9);
+    border: 1px solid rgba(168, 168, 168, 1.00);
+    z-index: 1;
+    margin-top: 59px;
+}
+
+div.dropdown-content button {
+    color: black;
+    display: block;
+    margin-top: 0px;
+    background-color: white;
+    text-decoration: none;
+    padding: 12px 12px;
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size: .8em;
+}
+
+.dropdown-content button:hover {
+    background-color: lightgrey
+}
+
+.dropdown-content button:hover:last-of-type {
+    background-color: lightcoral
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/******************************************************************/
+/*                            FOOTER                              */
+/******************************************************************/
+
+footer {
+    background-color: royalblue;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    height: 50px;
+    z-index: 0;
+    left: 0;
+    right: 0;  
+    padding-top: 10px;
+    color: white;
+    font-size: 0.6em;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+footer p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
